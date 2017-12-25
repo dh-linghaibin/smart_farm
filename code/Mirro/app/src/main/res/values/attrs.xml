@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="firstColor" format="color"/>
+    <attr name="secondColor" format="color"/>
+    <attr name="circleWidth" format="dimension"/>
+    <attr name="speed" format="integer"/>
+
+    <declare-styleable name="CustomProgressbar">
+        <attr name="firstColor"/>
+        <attr name="secondColor"/>
+        <attr name="circleWidth"/>
+        <attr name="speed"/>
+    </declare-styleable>
+
+    <declare-styleable name="HorizontalNumProgressBar">
+        <attr name="progress_reached_color" format="color|reference"/>
+        <attr name="progress_unreached_color" format="color|reference"/>
+        <attr name="progress_height" format="dimension|reference"/>
+        <attr name="progress_text_color" format="color|reference"/>
+        <attr name="progress_text_size" format="dimension|reference"/>
+        <attr name="progress_text_offset" format="dimension|reference"/>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jt28.a6735.mirro.movelayout.DragerViewLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drager_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+    <!--wallpaper_bg-->
+    <LinearLayout
+        android:id="@+id/main_mainmenu"
+        android:layout_width="536px"
+        android:layout_height="985px"
+        android:orientation="horizontal"
+        android:tag="one">
+        <fragment
+            android:name="com.jt28.a6735.mirro.fragment.mainmenu"
+            android:layout_width="536px"
+            android:layout_height="985px"
+            android:tag="one"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_choosecity"
+        android:visibility="gone"
+        android:layout_width="1057px"
+        android:layout_height="984px"
+        android:orientation="horizontal"
+        android:tag="tow">
+        <fragment
+            android:name="com.jt28.a6735.mirro.fragment.bigshowmanger"
+            android:layout_width="1057px"
+            android:layout_height="984px"
+            android:tag="tow"/>
+    </LinearLayout>
+
+</com.jt28.a6735.mirro.movelayout.DragerViewLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:text=""
+        android:id="@+id/weather_text_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/weather_but_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="天气栏" />
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+        <!--android:id="@+id/refresh"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<ScrollView-->
+            <!--android:id="@+id/content_main"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:fadingEdge="none"-->
+            <!--android:overScrollMode="never"-->
+            <!--android:scrollbars="none"-->
+            <!--android:visibility="visible">-->
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/first_show_rl"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+                <!--<com.jt28.a6735.weatherget.widget.WeekForecastView-->
+                    <!--android:id="@+id/weekForecast"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content" />-->
+            <!--</RelativeLayout>-->
+            <!--<View-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="1.0px"-->
+            <!--android:layout_marginBottom="8.0dip"-->
+            <!--android:background="@color/home_item_divider_color" />-->
+
+        <!--</ScrollView>-->
+
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/content_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/first_show_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_updateTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20.0dip"
+                            android:layout_marginTop="15.0dip"
+                            android:gravity="right"
+                            android:text="20:01 刷新"
+                            android:textColor="@color/home_text_color_dark"
+                            android:textSize="13.0sp" />
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/tv_RTTemp"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_below="@id/tv_updateTime"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:fontFamily="sans-serif-thin"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="20"-->
+                            <!--android:textColor="@color/home_text_color"-->
+                            <!--android:textSize="90.0sp"-->
+                            <!--android:textStyle="normal" />-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/tv_degree"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_alignTop="@id/tv_RTTemp"-->
+                            <!--android:layout_toRightOf="@id/tv_RTTemp"-->
+                            <!--android:fontFamily="sans-serif-thin"-->
+                            <!--android:text="°"-->
+                            <!--android:textColor="@color/home_text_color"-->
+                            <!--android:textSize="60.0sp"-->
+                            <!--android:textStyle="normal" />-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/tv_RTTypeAndRealFeel"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_below="@id/tv_RTTemp"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:layout_marginTop="5.0dip"-->
+                            <!--android:text="晴 | 体感 21°"-->
+                            <!--android:textColor="@color/home_text_color_dark"-->
+                            <!--android:textSize="14.0sp" />-->
+
+                    </RelativeLayout>
+
+                    <com.jt28.a6735.weatherget.widget.WeekForecastView
+                        android:id="@+id/weekForecast"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginBottom="8.0dip"
+                    android:background="@color/home_item_divider_color" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="20.0dip"
+                    android:layout_marginBottom="8.0dip"
+                    android:gravity="center"
+                    android:text="@string/activity_home_class_title_wind_speed_forecast"
+                    android:textColor="@color/home_text_color_dark"
+                    android:textSize="12.0sp" />
+
+                <com.jt28.a6735.weatherget.widget.WindForecastView
+                    android:id="@+id/wind_forecast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginBottom="8.0dip"
+                    android:background="@color/home_item_divider_color" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="15.0dip"
+                    android:paddingTop="15.0dip"
+                    android:text="@string/activity_home_class_title_hour_forecast"
+                    android:textColor="@color/home_text_color_dark"
+                    android:textSize="13.0sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fadingEdge="none"
+                    android:overScrollMode="never"
+                    android:scrollbars="none">
+
+                    <com.jt28.a6735.weatherget.widget.HourForeCastView
+                        android:id="@+id/hourForecast"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </HorizontalScrollView>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginBottom="8.0dip"
+                    android:background="@color/home_item_divider_color" />
+
+                <!-- 风速湿度 -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20.0dip"
+                    android:text="@string/activity_home_class_title_wind_and_humidity"
+                    android:textColor="@color/home_text_color_dark"
+                    android:textSize="14.0sp" />
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginBottom="8.0dip"
+                    android:background="@color/home_item_divider_color" />
+
+                <!--<TextView-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:paddingBottom="15.0dip"-->
+                    <!--android:paddingTop="15.0dip"-->
+                    <!--android:text="@string/activity_home_class_title_data_source"-->
+                    <!--android:textColor="@color/home_text_color_dark"-->
+                    <!--android:textSize="13.0sp" />-->
+
+            </LinearLayout>
+        </ScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

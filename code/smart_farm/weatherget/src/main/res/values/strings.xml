@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WeatherGet</string>
+    <string name="custom_sun_view_str_sunrise">日出 %1$s</string>
+    <string name="custom_sun_view_str_sunset">日落 %1$s</string>
+</resources>

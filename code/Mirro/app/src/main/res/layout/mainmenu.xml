@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="536px"
+    android:layout_height="985px"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="201px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/mainmenu_werleftopen2"
+            android:layout_width="40px"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_weatherclose"
+            />
+
+        <LinearLayout
+            android:background="#e0ffffff"
+            android:layout_width="496px"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="272px"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="201px"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="136px"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.9"
+                            android:gravity="center">
+                            <ImageView
+                                android:id="@+id/mainmenu_weaimg"
+                                android:layout_width="72px"
+                                android:layout_height="72px"
+                                android:background="@mipmap/home_icon_rain" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:gravity="center_vertical">
+                                <TextView
+                                    android:id="@+id/mainmenu_temp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="19°"
+                                    android:textColor="#303030"
+                                    android:textSize="46px" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical">
+                                <TextView
+                                    android:id="@+id/mainmenu_ud_temp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="18°/26°"
+                                    android:textColor="#303030"
+                                    android:textSize="24px" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65px"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center">
+                            <TextView
+                                android:id="@+id/mainmenu_itel"
+                                android:layout_width="72px"
+                                android:layout_height="32px"
+                                android:background="@drawable/bg_border_stroke"
+                                android:gravity="center"
+                                android:text="带伞"
+                                android:textColor="#f2a531"
+                                android:textSize="20px" />
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/mainmenu_addr"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"
+                            android:gravity="center"
+                            android:text="杭州"
+                            android:textColor="#6b6b6b"
+                            android:textSize="20px" />
+                        <LinearLayout
+                            android:id="@+id/mainmenu_openchoosecity"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="9px"
+                                android:layout_height="16px"
+                                android:background="@mipmap/home_weather_icon_address" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                </LinearLayout>
+
+
+            <View
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_marginLeft="-70px"
+                android:layout_marginRight="-70px"
+                android:layerType="software"
+                android:layout_height="141px"
+                android:clickable="true"
+                android:background="@drawable/vertical_dotted_line"
+                />
+
+            <LinearLayout
+                android:layout_width="224px"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical">
+                    <LinearLayout
+                        android:layout_width="162px"
+                        android:layout_height="66px"
+                        android:background="@mipmap/home_bg_time"
+                        android:gravity="center">
+                        <TextView
+                            android:id="@+id/mainmenu_timer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="08:30"
+                            android:textColor="#ffffff"
+                            android:textSize="50px" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/mainmenu_year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2016/03/28"
+                        android:textColor="#313131"
+                        android:textSize="24px" />
+
+                    <TextView
+                        android:id="@+id/mainmenu_week"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="星期二"
+                        android:textColor="#757575"
+                        android:textSize="20px" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/mainmenu_werleftopen"
+            android:layout_width="40px"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_weatheropen"
+             />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="248px"
+        android:orientation="horizontal">
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/mainmenu_msgleftopen2"
+            android:layout_width="40px"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_messageboardopen_left" />
+
+        <LinearLayout
+            android:background="#e0ffffff"
+            android:layout_width="496px"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="留言板"
+                    android:textSize="18px"
+                    android:textColor="#6b6b6b"/>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/mainmenu_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/mainmenu_msgleftopen"
+            android:layout_width="40px"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_messageboardopen" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="286px"
+        android:orientation="horizontal">
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/mainmenu_newleftopen2"
+            android:layout_width="40px"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_weatherclose" />
+
+        <LinearLayout
+            android:background="#e0ffffff"
+            android:layout_width="496px"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="新闻"
+                    android:textSize="18px"
+                    android:textColor="#6b6b6b"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/mainmenu_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="157px" />
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#a0a0a0"/>
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:id="@+id/mainmenu_news_voice"
+                        android:layout_width="144px"
+                        android:layout_height="44px"
+                        android:text="  语音播报"
+                        android:textSize="19px"
+                        android:textColor="@color/white"
+                        android:background="@drawable/but_voice_announcements"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/mainmenu_newleftopen"
+            android:layout_width="40px"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_weatheropen" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="141px"
+        android:orientation="horizontal">
+        <Button
+            android:visibility="gone"
+            android:id="@+id/mainmenu_appleftopen2"
+            android:layout_width="40px"
+            android:layout_height="match_parent"
+            android:background="@mipmap/home_app_add_right_pressed" />
+
+        <LinearLayout
+            android:layout_width="496px"
+            android:layout_height="match_parent"
+            android:background="#e0ffffff"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="第三方应用"
+                android:textColor="#6b6b6b"
+                android:textSize="18px" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mainmenu_applist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/mainmenu_appleftopen"
+            android:layout_width="40px"
+            android:layout_height="match_parent"
+            android:background="@mipmap/home_app_add_left_pressed" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:orientation="horizontal">
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/mainmenu_setleftopen"
+            android:layout_width="40px"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:background="#e0ffffff"
+            android:gravity="center_vertical"
+            android:layout_width="496px"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/mainmenu_hom_user"
+                    android:layout_width="64px"
+                    android:layout_height="64px"
+                    android:background="@mipmap/home_user_img"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/mainmenu_photo"
+                    android:layout_width="32px"
+                    android:layout_height="32px"
+                    android:background="@mipmap/home_user_btn_camera_default"/>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/mainmenu_setting"
+                    android:layout_width="32px"
+                    android:layout_height="32px"
+                    android:background="@mipmap/home_user_btn_set_default"/>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/mainmenu_system"
+                    android:layout_width="42px"
+                    android:layout_height="32px"
+                    android:background="@mipmap/zy"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

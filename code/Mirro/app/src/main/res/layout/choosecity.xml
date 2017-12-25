@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1001px"
+    android:layout_height="984px"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="117px"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="34px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="城市切换"
+                android:textColor="#303030"
+                android:textSize="32px"/>
+            <View
+                android:layout_marginTop="36px"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/gainsboro"/>
+        </LinearLayout>
+        <!--<LinearLayout-->
+            <!--android:layout_width="907px"-->
+            <!--android:layout_height="64px"-->
+            <!--android:background="#dee8f1"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center_vertical">-->
+            <!--<ImageView-->
+                <!--android:layout_marginLeft="20px"-->
+                <!--android:layout_width="25px"-->
+                <!--android:layout_height="32px"-->
+                <!--android:background="@mipmap/icon_location"/>-->
+            <!--<TextView-->
+                <!--android:layout_marginLeft="20px"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="定位城市:"-->
+                <!--android:textColor="#42a5f6"-->
+                <!--android:textSize="24px"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="杭州市:"-->
+                <!--android:textColor="#42a5f6"-->
+                <!--android:textSize="24px"/>-->
+            <!--<Button-->
+                <!--android:layout_marginLeft="511px"-->
+                <!--android:layout_width="146px"-->
+                <!--android:layout_height="54px"-->
+                <!--android:text="重新定位"-->
+                <!--android:textColor="#42a5f6"-->
+                <!--android:textSize="24px"-->
+                <!--android:background="@drawable/but_city_shape"/>-->
+        <!--</LinearLayout>-->
+
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/choose_city_list"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+
+        <com.jt28.a6735.mirro.view.choosecity.PinnedHeaderListView
+            android:id="@+id/choose_city_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -53,3 +53,17 @@ google-services.json
 freeline.py
 freeline/
 freeline_project_description.json
+
+*.rar
+*.uvprojx
+*.a6735
+*.uvoptx
+*.axf
+*.htm
+*.htm
+*.crf
+
+/android/
+/data/
+/ui/
+

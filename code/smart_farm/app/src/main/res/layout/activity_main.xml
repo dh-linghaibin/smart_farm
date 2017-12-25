@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/back">
+
+    <com.jt28.a6735.movelayout.DragerViewLayout
+        android:id="@+id/drager_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:name="com.jt28.a6735.smart_farm.VideoFragment"
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:tag="one"/>
+
+        <LinearLayout
+            android:id="@+id/activity_main_layout"
+            android:layout_width="300sp"
+            android:layout_height="300sp">
+            <fragment
+                android:name="com.jt28.a6735.smart_farm.NewSWebFragment"
+                android:layout_width="300sp"
+                android:layout_height="300sp"
+                android:tag="three"
+                />
+        </LinearLayout>
+
+        <fragment
+            android:name="com.jt28.a6735.smart_farm.WeatherFragmnet"
+            android:layout_width="300sp"
+            android:layout_height="300sp"
+            android:tag="tow"/>
+    </com.jt28.a6735.movelayout.DragerViewLayout>
+
+</LinearLayout>

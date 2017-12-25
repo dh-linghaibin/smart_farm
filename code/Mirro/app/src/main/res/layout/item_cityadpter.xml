@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100px"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/id_item_cityadpter_but"
+        android:layout_width="108px"
+        android:layout_height="48px"
+        android:text="杭州"
+        android:textColor="#42a5f6"
+        android:textSize="24px"
+        android:background="@drawable/but_city_shape"/>
+
+</LinearLayout>
