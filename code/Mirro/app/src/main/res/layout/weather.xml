@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="1001px"
-    android:layout_height="984px">
+    android:layout_width="739px"
+    android:layout_height="700px"
+    android:background="@color/red">
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="739px"
+        android:layout_height="700px"
         android:orientation="vertical">
         <LinearLayout
             android:layout_weight="1.6"
@@ -24,8 +25,8 @@
                     android:orientation="vertical">
                     <ImageView
                         android:id="@+id/weather_wer_img"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="75px"
+                        android:layout_height="75px"
                         android:background="@mipmap/icon_heavyrain_96"
                         />
                 </LinearLayout>
@@ -39,7 +40,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="19°"
-                        android:textSize="80px"
+                        android:textSize="56px"
                         android:textColor="#303030"/>
                     <TextView
                         android:layout_toRightOf = "@+id/weather_temp"
@@ -48,22 +49,22 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="18°/26°"
-                        android:textSize="34px"
+                        android:textSize="24px"
                         android:textColor="#303030"/>
                     <TextView
                         android:id="@+id/weather_wer"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginLeft="14dp"
                         android:layout_toRightOf = "@+id/weather_updowntemp"
                         android:layout_alignParentBottom = "true"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="中雨"
-                        android:textSize="34px"
+                        android:textSize="24px"
                         android:textColor="#303030"/>
                 </RelativeLayout>
             </LinearLayout>
             <LinearLayout
-                android:layout_marginLeft="40dp"
+                android:layout_marginLeft="28dp"
                 android:gravity="center_vertical"
                 android:layout_weight="2.5"
                 android:layout_width="match_parent"
@@ -72,24 +73,24 @@
                 <TextView
                     android:id="@+id/weather_wind_tool"
                     android:gravity="center"
-                    android:layout_width="60dp"
-                    android:layout_height="35dp"
+                    android:layout_width="29dp"
+                    android:layout_height="18dp"
                     android:text="带伞"
-                    android:textSize="25px"
+                    android:textSize="17px"
                     android:background="@drawable/bg_border_stroke"
                     android:textColor="#f2a531"/>
                 <TextView
                     android:id="@+id/weather_wind"
-                    android:layout_marginLeft="40dp"
+                    android:layout_marginLeft="28dp"
                     android:gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="西北风：3-4级"
                     android:textColor="#787878"
-                    android:textSize="28px"/>
+                    android:textSize="19px"/>
                 <TextView
                     android:gravity="center"
-                    android:layout_width="50dp"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="|"/>
                 <LinearLayout
@@ -99,16 +100,16 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="室内空气："
+                    android:text="室外空气："
                     android:textColor="#787878"
-                    android:textSize="28px"/>
+                    android:textSize="20px"/>
                 <TextView
                     android:id="@+id/weather_roomair"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="良"
                     android:textColor="#787878"
-                    android:textSize="28px"/>
+                    android:textSize="20px"/>
 
                 </LinearLayout>
             </LinearLayout>
@@ -116,13 +117,13 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="10dp"
+            android:layout_height="7dp"
             android:layerType="software"
             android:background="@drawable/bg_dotted_line"/>
 
         <LinearLayout
             android:layout_weight="1"
-            android:layout_width="match_parent"
+            android:layout_width="739px"
             android:layout_height="0dp"
             android:orientation="vertical">
             <LinearLayout
@@ -147,11 +148,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="11:00"
-                        android:textSize="24px"
+                        android:textSize="17px"
                         android:textColor="#787878"/>
                 </LinearLayout>
                 <View
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="11dp"
                     android:layout_weight="0.5"
                     android:layout_width="0dp"
                     android:layout_height="1dp"
@@ -172,11 +173,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="11:00"
-                        android:textSize="24px"
+                        android:textSize="17px"
                         android:textColor="#787878"/>
                 </LinearLayout>
                 <View
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="11dp"
                     android:layout_weight="0.5"
                     android:layout_width="0dp"
                     android:layout_height="1dp"
@@ -197,11 +198,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="11:00"
-                        android:textSize="24px"
+                        android:textSize="17px"
                         android:textColor="#787878"/>
                 </LinearLayout>
                 <View
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="11dp"
                     android:layout_weight="0.5"
                     android:layout_width="0dp"
                     android:layout_height="1dp"
@@ -222,11 +223,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="11:00"
-                        android:textSize="24px"
+                        android:textSize="17px"
                         android:textColor="#787878"/>
                 </LinearLayout>
                 <View
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="11dp"
                     android:layout_weight="0.5"
                     android:layout_width="0dp"
                     android:layout_height="1dp"
@@ -247,11 +248,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="11:00"
-                        android:textSize="24px"
+                        android:textSize="17px"
                         android:textColor="#787878"/>
                 </LinearLayout>
                 <View
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="11dp"
                     android:layout_weight="0.5"
                     android:layout_width="0dp"
                     android:layout_height="1dp"
@@ -272,11 +273,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="11:00"
-                        android:textSize="24px"
+                        android:textSize="17px"
                         android:textColor="#787878"/>
                 </LinearLayout>
                 <View
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="11dp"
                     android:layout_weight="0.5"
                     android:layout_width="0dp"
                     android:layout_height="1dp"
@@ -297,7 +298,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="11:00"
-                        android:textSize="24px"
+                        android:textSize="17px"
                         android:textColor="#787878"/>
                 </LinearLayout>
             </LinearLayout>
@@ -307,7 +308,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp">
             <com.jt28.a6735.mirro.view.BezierCurve
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="14dp"
                 android:id="@+id/weather_beziercurve"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -345,13 +346,13 @@
                         android:layout_height="wrap_content"
                         android:text="良"
                         android:textColor="#313131"
-                        android:textSize="24px"/>
+                        android:textSize="17px"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="室外空气"
                         android:textColor="#6b6b6b"
-                        android:textSize="16px"/>
+                        android:textSize="11px"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -382,12 +383,12 @@
                         android:layout_height="wrap_content"
                         android:text="良"
                         android:textColor="#313131"
-                        android:textSize="24px"/>
+                        android:textSize="17px"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="室内空气"
-                        android:textSize="16px"
+                        android:textSize="11px"
                         android:textColor="#6b6b6b"/>
                 </LinearLayout>
             </LinearLayout>
@@ -419,12 +420,12 @@
                         android:layout_height="wrap_content"
                         android:text="安全"
                         android:textColor="#313131"
-                        android:textSize="24px"/>
+                        android:textSize="17px"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="甲醇浓度"
-                        android:textSize="16px"
+                        android:textSize="11px"
                         android:textColor="#6b6b6b"/>
                 </LinearLayout>
             </LinearLayout>
@@ -459,12 +460,12 @@
                         android:layout_height="wrap_content"
                         android:text="开"
                         android:textColor="#313131"
-                        android:textSize="24px"/>
+                        android:textSize="17px"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="新风系统"
-                        android:textSize="16px"
+                        android:textSize="11px"
                         android:textColor="#6b6b6b"/>
                 </LinearLayout>
             </LinearLayout>
@@ -496,13 +497,13 @@
                         android:layout_height="wrap_content"
                         android:text="干燥"
                         android:textColor="#313131"
-                        android:textSize="24px"
+                        android:textSize="17px"
                         />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="湿度"
-                        android:textSize="16px"
+                        android:textSize="11px"
                         android:textColor="#6b6b6b"/>
                 </LinearLayout>
             </LinearLayout>
@@ -540,14 +541,14 @@
                         android:layout_height="wrap_content"
                         android:text="单衣类"
                         android:textColor="@color/white"
-                        android:textSize="24px"
+                        android:textSize="17px"
                         android:textStyle="bold" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="穿衣"
                         android:textColor="@color/white"
-                        android:textSize="16px"/>
+                        android:textSize="11px"/>
                 </LinearLayout>
             </RelativeLayout>
             <RelativeLayout
@@ -576,14 +577,14 @@
                         android:layout_height="wrap_content"
                         android:text="羽毛球"
                         android:textColor="@color/white"
-                        android:textSize="24px"
+                        android:textSize="17px"
                         android:textStyle="bold" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="运动"
                         android:textColor="@color/white"
-                        android:textSize="16px"/>
+                        android:textSize="11px"/>
                 </LinearLayout>
             </RelativeLayout>
             <RelativeLayout
@@ -612,14 +613,14 @@
                         android:layout_height="wrap_content"
                         android:text="60％"
                         android:textColor="@color/white"
-                        android:textSize="24px"
+                        android:textSize="17px"
                         android:textStyle="bold" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="滤网洁净"
                         android:textColor="@color/white"
-                        android:textSize="16px"/>
+                        android:textSize="11px"/>
                 </LinearLayout>
             </RelativeLayout>
             <RelativeLayout
@@ -648,7 +649,7 @@
                         android:layout_height="wrap_content"
                         android:text="美妆"
                         android:textColor="@color/white"
-                        android:textSize="24px"
+                        android:textSize="17px"
                         android:textStyle="bold"/>
                 </LinearLayout>
             </RelativeLayout>

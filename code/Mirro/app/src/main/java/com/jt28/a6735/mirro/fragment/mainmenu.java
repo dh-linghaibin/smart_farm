@@ -157,7 +157,7 @@ public class mainmenu extends Fragment {
         if (!xy.equals("0")) {
             String[] xys = xy.split("#");
             if (xys.length == 2) {
-                if(Integer.parseInt(xys[0]) < 820) {
+                if(Integer.parseInt(xys[0]) < 500) {
                     chose_dr = true;
                 } else {
                     chose_dr = false;
@@ -389,7 +389,7 @@ public class mainmenu extends Fragment {
                         messageboardopen.setVisibility(View.GONE);
                         newleftopen.setVisibility(View.GONE);
                         app_add.setVisibility(View.GONE);
-                        sys_view.setVisibility(View.GONE);
+                      //  sys_view.setVisibility(View.GONE);
                         chose_dr = !chose_dr;
                         but_set();
                     }
@@ -485,10 +485,10 @@ public class mainmenu extends Fragment {
     private TextView show_year;
     private TextView show_week;
 
-    private ImageView weatheropen;
-    private ImageView messageboardopen;
-    private ImageView newleftopen;
-    private LinearLayout openchoosecity;//打开城市设置
+    private static ImageView weatheropen;
+    private static ImageView messageboardopen;
+    private static ImageView newleftopen;
+    private static LinearLayout openchoosecity;//打开城市设置
     private WeatherInfo weatherInfo;//传输使用
     //留言板
     private RecyclerView l_message;//留言

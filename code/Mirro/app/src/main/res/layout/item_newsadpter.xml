@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="57px"
+    android:layout_height="40px"
     android:orientation="vertical"
     android:gravity="center">
 
     <LinearLayout
         android:id="@+id/item_news_contentback"
-        android:layout_width="445px"
-        android:layout_height="44px"
+        android:layout_width="311px"
+        android:layout_height="31px"
         android:orientation="horizontal"
         android:background="#cde1f1">
         <TextView
-            android:layout_marginLeft="5dp"
+            android:layout_marginLeft="4dp"
             android:id="@+id/item_news_content"
             android:gravity="center_vertical"
-            android:layout_width="392px"
-            android:layout_height="44px"
+            android:layout_width="274px"
+            android:layout_height="31px"
             android:text="行文 决定分手快到家阿富汗大开杀戒"
-            android:textSize="19px"
+            android:textSize="13px"
             android:textColor="#42a5f6"/>
         <LinearLayout
             android:id="@+id/item_news_butback"
@@ -27,19 +27,19 @@
             android:background="#b1d5f2">
             <ImageView
                 android:id="@+id/item_news_but"
-                android:layout_width="44px"
-                android:layout_height="44px" />
+                android:layout_width="31px"
+                android:layout_height="31px" />
         </LinearLayout>
     </LinearLayout>
 
     <com.jt28.a6735.mirro.view.HorizontalNumProgressBar
         android:id="@+id/item_news_progress"
-        android:layout_width="436px"
+        android:layout_width="305px"
         android:layout_height="4px" />
 
     <View
         android:layout_marginTop="3dp"
-        android:layout_width="436px"
+        android:layout_width="305px"
         android:layout_height="1dp"
         android:background="#000000"/>
 </LinearLayout>

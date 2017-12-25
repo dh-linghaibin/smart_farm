@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="63px"
+    android:layout_height="44px"
     android:orientation="horizontal">
     <LinearLayout
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="7dp"
         android:layout_weight="1"
         android:gravity="center"
         android:layout_width="0dp"
@@ -26,15 +26,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <ImageView
-                android:layout_marginTop="7dp"
-                android:layout_marginRight="7dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
                 android:id="@+id/item_message_background"
                 android:layout_centerInParent="true"
-                android:layout_width="359px"
-                android:layout_height="49px"
+                android:layout_width="251px"
+                android:layout_height="34px"
                 android:background="@drawable/item_message_back"/>
             <LinearLayout
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="14dp"
                 android:layout_centerVertical = "true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -56,8 +56,8 @@
             android:id="@+id/item_message_noread"
             android:layout_alignTop ="@+id/item_message_background_group"
             android:layout_alignRight ="@+id/item_message_background_group"
-            android:layout_width="10dp"
-            android:layout_height="10dp"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
             android:background="@drawable/item_noread"/>
     </RelativeLayout>
 </LinearLayout>

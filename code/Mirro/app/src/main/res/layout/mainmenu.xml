@@ -1,39 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="536px"
-    android:layout_height="985px"
+    android:layout_width="375px"
+    android:layout_height="700px"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/red">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="201px"
+        android:layout_height="140px"
         android:orientation="horizontal">
 
         <ImageView
             android:visibility="gone"
             android:id="@+id/mainmenu_werleftopen2"
-            android:layout_width="40px"
+            android:layout_width="28px"
             android:layout_height="match_parent"
             android:background="@drawable/btn_weatherclose"
             />
 
         <LinearLayout
             android:background="#e0ffffff"
-            android:layout_width="496px"
+            android:layout_width="347px"
             android:layout_height="match_parent"
             android:orientation="horizontal">
             <LinearLayout
                 android:gravity="center"
-                android:layout_width="272px"
+                android:layout_width="190px"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="201px"
+                    android:layout_height="98px"
                     android:orientation="vertical">
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="136px"
+                        android:layout_height="66.5px"
                         android:orientation="horizontal">
                         <LinearLayout
                             android:layout_width="0dp"
@@ -42,8 +43,8 @@
                             android:gravity="center">
                             <ImageView
                                 android:id="@+id/mainmenu_weaimg"
-                                android:layout_width="72px"
-                                android:layout_height="72px"
+                                android:layout_width="50px"
+                                android:layout_height="50px"
                                 android:background="@mipmap/home_icon_rain" />
                         </LinearLayout>
                         <LinearLayout
@@ -62,7 +63,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="19°"
                                     android:textColor="#303030"
-                                    android:textSize="46px" />
+                                    android:textSize="32px" />
                             </LinearLayout>
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -75,13 +76,13 @@
                                     android:layout_height="wrap_content"
                                     android:text="18°/26°"
                                     android:textColor="#303030"
-                                    android:textSize="24px" />
+                                    android:textSize="17px" />
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="65px"
+                        android:layout_height="45px"
                         android:gravity="center"
                         android:orientation="horizontal">
                         <LinearLayout
@@ -91,13 +92,13 @@
                             android:gravity="center">
                             <TextView
                                 android:id="@+id/mainmenu_itel"
-                                android:layout_width="72px"
-                                android:layout_height="32px"
+                                android:layout_width="50px"
+                                android:layout_height="22px"
                                 android:background="@drawable/bg_border_stroke"
                                 android:gravity="center"
                                 android:text="带伞"
                                 android:textColor="#f2a531"
-                                android:textSize="20px" />
+                                android:textSize="14px" />
                         </LinearLayout>
                         <TextView
                             android:id="@+id/mainmenu_addr"
@@ -107,7 +108,7 @@
                             android:gravity="center"
                             android:text="杭州"
                             android:textColor="#6b6b6b"
-                            android:textSize="20px" />
+                            android:textSize="14px" />
                         <LinearLayout
                             android:id="@+id/mainmenu_openchoosecity"
                             android:layout_width="0dp"
@@ -115,8 +116,8 @@
                             android:layout_weight="1.5"
                             android:gravity="center">
                             <ImageView
-                                android:layout_width="9px"
-                                android:layout_height="16px"
+                                android:layout_width="6px"
+                                android:layout_height="11px"
                                 android:background="@mipmap/home_weather_icon_address" />
                         </LinearLayout>
                     </LinearLayout>
@@ -129,16 +130,16 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_marginLeft="-70px"
-                android:layout_marginRight="-70px"
+                android:layout_marginLeft="-49px"
+                android:layout_marginRight="-49px"
                 android:layerType="software"
-                android:layout_height="141px"
+                android:layout_height="98px"
                 android:clickable="true"
                 android:background="@drawable/vertical_dotted_line"
                 />
 
             <LinearLayout
-                android:layout_width="224px"
+                android:layout_width="156px"
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:orientation="vertical">
@@ -148,8 +149,8 @@
                     android:layout_weight="3"
                     android:gravity="center_vertical">
                     <LinearLayout
-                        android:layout_width="162px"
-                        android:layout_height="66px"
+                        android:layout_width="113px"
+                        android:layout_height="46px"
                         android:background="@mipmap/home_bg_time"
                         android:gravity="center">
                         <TextView
@@ -158,7 +159,7 @@
                             android:layout_height="wrap_content"
                             android:text="08:30"
                             android:textColor="#ffffff"
-                            android:textSize="50px" />
+                            android:textSize="37px" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -174,7 +175,7 @@
                         android:layout_height="wrap_content"
                         android:text="2016/03/28"
                         android:textColor="#313131"
-                        android:textSize="24px" />
+                        android:textSize="17px" />
 
                     <TextView
                         android:id="@+id/mainmenu_week"
@@ -182,7 +183,7 @@
                         android:layout_height="wrap_content"
                         android:text="星期二"
                         android:textColor="#757575"
-                        android:textSize="20px" />
+                        android:textSize="17px" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -190,7 +191,7 @@
         <ImageView
             android:visibility="gone"
             android:id="@+id/mainmenu_werleftopen"
-            android:layout_width="40px"
+            android:layout_width="28px"
             android:layout_height="match_parent"
             android:background="@drawable/btn_weatheropen"
              />
@@ -203,22 +204,22 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="248px"
+        android:layout_height="184px"
         android:orientation="horizontal">
         <ImageView
             android:visibility="gone"
             android:id="@+id/mainmenu_msgleftopen2"
-            android:layout_width="40px"
+            android:layout_width="28px"
             android:layout_height="match_parent"
             android:background="@drawable/btn_messageboardopen_left" />
 
         <LinearLayout
             android:background="#e0ffffff"
-            android:layout_width="496px"
+            android:layout_width="347px"
             android:layout_height="match_parent"
             android:orientation="horizontal">
             <LinearLayout
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="7dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
@@ -226,7 +227,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="留言板"
-                    android:textSize="18px"
+                    android:textSize="12px"
                     android:textColor="#6b6b6b"/>
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/mainmenu_message"
@@ -238,7 +239,7 @@
         <ImageView
             android:visibility="gone"
             android:id="@+id/mainmenu_msgleftopen"
-            android:layout_width="40px"
+            android:layout_width="28px"
             android:layout_height="match_parent"
             android:background="@drawable/btn_messageboardopen" />
     </LinearLayout>
@@ -250,41 +251,41 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="286px"
+        android:layout_height="200px"
         android:orientation="horizontal">
         <ImageView
             android:visibility="gone"
             android:id="@+id/mainmenu_newleftopen2"
-            android:layout_width="40px"
+            android:layout_width="28px"
             android:layout_height="match_parent"
             android:background="@drawable/btn_weatherclose" />
 
         <LinearLayout
             android:background="#e0ffffff"
-            android:layout_width="496px"
+            android:layout_width="347px"
             android:layout_height="match_parent"
             android:orientation="vertical">
             <LinearLayout
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
                 <TextView
                     android:gravity="center_vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="28dp"
                     android:text="新闻"
-                    android:textSize="18px"
+                    android:textSize="12px"
                     android:textColor="#6b6b6b"/>
 
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/mainmenu_news"
                     android:layout_width="match_parent"
-                    android:layout_height="157px" />
+                    android:layout_height="109px" />
 
                 <View
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="7dp"
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
                     android:background="#a0a0a0"/>
@@ -294,10 +295,10 @@
                     android:layout_height="match_parent">
                     <Button
                         android:id="@+id/mainmenu_news_voice"
-                        android:layout_width="144px"
-                        android:layout_height="44px"
+                        android:layout_width="100px"
+                        android:layout_height="30px"
                         android:text="  语音播报"
-                        android:textSize="19px"
+                        android:textSize="13px"
                         android:textColor="@color/white"
                         android:background="@drawable/but_voice_announcements"/>
                 </LinearLayout>
@@ -307,7 +308,7 @@
         <ImageView
             android:visibility="gone"
             android:id="@+id/mainmenu_newleftopen"
-            android:layout_width="40px"
+            android:layout_width="28px"
             android:layout_height="match_parent"
             android:background="@drawable/btn_weatheropen" />
     </LinearLayout>
@@ -318,17 +319,17 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="141px"
+        android:layout_height="98px"
         android:orientation="horizontal">
         <Button
             android:visibility="gone"
             android:id="@+id/mainmenu_appleftopen2"
-            android:layout_width="40px"
+            android:layout_width="28px"
             android:layout_height="match_parent"
             android:background="@mipmap/home_app_add_right_pressed" />
 
         <LinearLayout
-            android:layout_width="496px"
+            android:layout_width="347px"
             android:layout_height="match_parent"
             android:background="#e0ffffff"
             android:orientation="vertical">
@@ -339,7 +340,7 @@
                 android:layout_marginLeft="10dp"
                 android:text="第三方应用"
                 android:textColor="#6b6b6b"
-                android:textSize="18px" />
+                android:textSize="12px" />
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/mainmenu_applist"
@@ -350,7 +351,7 @@
         <Button
             android:visibility="gone"
             android:id="@+id/mainmenu_appleftopen"
-            android:layout_width="40px"
+            android:layout_width="28px"
             android:layout_height="match_parent"
             android:background="@mipmap/home_app_add_left_pressed" />
     </LinearLayout>
@@ -362,29 +363,29 @@
     <LinearLayout
         android:gravity="center_vertical"
         android:layout_width="match_parent"
-        android:layout_height="100px"
+        android:layout_height="70px"
         android:orientation="horizontal">
         <ImageView
             android:visibility="gone"
             android:id="@+id/mainmenu_setleftopen"
-            android:layout_width="40px"
+            android:layout_width="28px"
             android:layout_height="match_parent" />
 
         <LinearLayout
             android:background="#e0ffffff"
             android:gravity="center_vertical"
-            android:layout_width="496px"
+            android:layout_width="347px"
             android:layout_height="match_parent"
             android:orientation="horizontal">
             <LinearLayout
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="7dp"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content">
                 <ImageView
                     android:id="@+id/mainmenu_hom_user"
-                    android:layout_width="64px"
-                    android:layout_height="64px"
+                    android:layout_width="44px"
+                    android:layout_height="44px"
                     android:background="@mipmap/home_user_img"
                     />
             </LinearLayout>
@@ -395,8 +396,8 @@
                 android:layout_height="wrap_content">
                 <Button
                     android:id="@+id/mainmenu_photo"
-                    android:layout_width="32px"
-                    android:layout_height="32px"
+                    android:layout_width="22px"
+                    android:layout_height="22px"
                     android:background="@mipmap/home_user_btn_camera_default"/>
             </LinearLayout>
             <LinearLayout
@@ -406,8 +407,8 @@
                 android:layout_height="wrap_content">
                 <Button
                     android:id="@+id/mainmenu_setting"
-                    android:layout_width="32px"
-                    android:layout_height="32px"
+                    android:layout_width="22px"
+                    android:layout_height="22px"
                     android:background="@mipmap/home_user_btn_set_default"/>
             </LinearLayout>
             <LinearLayout
@@ -417,8 +418,8 @@
                 android:layout_height="wrap_content">
                 <Button
                     android:id="@+id/mainmenu_system"
-                    android:layout_width="42px"
-                    android:layout_height="32px"
+                    android:layout_width="29px"
+                    android:layout_height="22px"
                     android:background="@mipmap/zy"/>
             </LinearLayout>
         </LinearLayout>

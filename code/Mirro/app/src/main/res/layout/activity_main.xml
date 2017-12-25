@@ -9,28 +9,29 @@
     <!--wallpaper_bg-->
     <LinearLayout
         android:id="@+id/main_mainmenu"
-        android:layout_width="536px"
-        android:layout_height="985px"
+        android:layout_width="375px"
+        android:layout_height="700px"
         android:orientation="horizontal"
         android:tag="one">
         <fragment
             android:name="com.jt28.a6735.mirro.fragment.mainmenu"
-            android:layout_width="536px"
-            android:layout_height="985px"
+            android:layout_width="375px"
+            android:layout_height="700px"
             android:tag="one"/>
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/main_choosecity"
         android:visibility="gone"
-        android:layout_width="1057px"
-        android:layout_height="984px"
+        android:layout_width="739px"
+        android:layout_height="700px"
         android:orientation="horizontal"
-        android:tag="tow">
+        android:tag="tow"
+        android:background="@color/blue">
         <fragment
             android:name="com.jt28.a6735.mirro.fragment.bigshowmanger"
-            android:layout_width="1057px"
-            android:layout_height="984px"
+            android:layout_width="739px"
+            android:layout_height="700px"
             android:tag="tow"/>
     </LinearLayout>
 
