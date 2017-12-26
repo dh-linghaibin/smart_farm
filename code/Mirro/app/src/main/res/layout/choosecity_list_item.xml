@@ -8,10 +8,10 @@
     <Button
         android:id="@+id/choosecity_list_item_name"
         android:layout_width="wrap_content"
-        android:layout_height="48px"
+        android:layout_height="33px"
         android:text="杭州"
         android:textColor="#42a5f6"
-        android:textSize="24px"
+        android:textSize="17px"
         android:background="@drawable/but_city_shape"/>
 
 </RelativeLayout>

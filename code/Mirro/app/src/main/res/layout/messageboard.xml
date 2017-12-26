@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="1001px"
-    android:layout_height="680px"
+    android:layout_width="700px"
+    android:layout_height="689px"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <LinearLayout
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -16,17 +16,17 @@
             <LinearLayout
                 android:id="@+id/messagedboard_tailgroup"
                 android:layout_width="match_parent"
-                android:layout_height="117px"
+                android:layout_height="82px"
                 android:orientation="vertical">
                 <TextView
-                    android:layout_marginTop="34px"
+                    android:layout_marginTop="24px"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="留言板"
                     android:textColor="#303030"
-                    android:textSize="32px"/>
+                    android:textSize="22px"/>
                 <View
-                    android:layout_marginTop="36px"
+                    android:layout_marginTop="25px"
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
                     android:background="@color/gainsboro"/>
@@ -36,7 +36,7 @@
                 android:id="@+id/messagedboard_messagegroup"
                 android:layout_below = "@+id/messagedboard_tailgroup"
                 android:layout_width="match_parent"
-                android:layout_height="400dp">
+                android:layout_height="280dp">
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/messagedboard_message"
                     android:layout_width="match_parent"
@@ -49,7 +49,7 @@
                 android:gravity="center"
                 android:layout_below = "@+id/messagedboard_tailgroup"
                 android:layout_width="match_parent"
-                android:layout_height="400dp"
+                android:layout_height="280dp"
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/messagedboard_voicedb"
@@ -57,12 +57,12 @@
                     android:layout_height="wrap_content"
                     android:background="@mipmap/icon_volume_bg"/>
                 <TextView
-                    android:layout_marginTop="66px"
+                    android:layout_marginTop="39px"
                     android:id="@+id/messagedboard_voicelongtime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="1'54''"
-                    android:textSize="40px"
+                    android:textSize="28px"
                     android:textColor="#909090"/>
             </LinearLayout>
 
@@ -74,7 +74,7 @@
                 android:orientation="vertical">
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="61px"
+                    android:layout_height="43px"
                     android:background="@color/white"
                     android:orientation="vertical">
                     <View
@@ -83,7 +83,7 @@
                         android:background="#c5c5c5"/>
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="56px"
+                        android:layout_height="39px"
                         android:orientation="horizontal">
                         <Button
                             android:id="@+id/messageboard_voice"
@@ -91,7 +91,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:text="语音留言"
-                            android:textSize="28px"
+                            android:textSize="19px"
                             android:textColor="#54aef7"
                             android:background="#e0ffffff"/>
                         <Button
@@ -100,7 +100,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:text="手写留言"
-                            android:textSize="28px"
+                            android:textSize="19px"
                             android:textColor="#80313131"
                             android:background="#e0ffffff"/>
                         <Button
@@ -109,7 +109,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:text="视屏留言"
-                            android:textSize="28px"
+                            android:textSize="19px"
                             android:textColor="#80313131"
                             android:background="#e0ffffff"/>
                     </LinearLayout>
@@ -123,11 +123,11 @@
                     android:id="@+id/messageboard_drawingboard_lay"
                     android:background="@color/white"
                     android:layout_width="match_parent"
-                    android:layout_height="502px"
+                    android:layout_height="351px"
                     android:orientation="vertical"
                     android:visibility="gone">
                     <com.jt28.a6735.mirro.view.PaletteView
-                        android:layout_weight="10"
+                        android:layout_weight="7"
                         android:id="@+id/messageboard_drawingboard"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
@@ -155,8 +155,8 @@
                             <View
                                 android:clickable="false"
                                 android:focusableInTouchMode="true"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
                                 android:background="@color/black"/>
                         </LinearLayout>
                         <LinearLayout
@@ -171,8 +171,8 @@
                             <View
                                 android:clickable="false"
                                 android:focusableInTouchMode="true"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
                                 android:background="@color/gray"/>
                         </LinearLayout>
                         <LinearLayout
@@ -187,8 +187,8 @@
                             <View
                                 android:clickable="false"
                                 android:focusableInTouchMode="true"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
                                 android:background="@color/red"/>
                         </LinearLayout>
                         <LinearLayout
@@ -203,8 +203,8 @@
                             <View
                                 android:clickable="false"
                                 android:focusableInTouchMode="true"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
                                 android:background="@color/skyblue"/>
                         </LinearLayout>
                         <LinearLayout
@@ -219,8 +219,8 @@
                             <View
                                 android:clickable="false"
                                 android:focusableInTouchMode="true"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
                                 android:background="@color/green"/>
                         </LinearLayout>
                         <LinearLayout
@@ -235,8 +235,8 @@
                             <View
                                 android:clickable="false"
                                 android:focusableInTouchMode="true"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
                                 android:background="@color/orange"/>
                         </LinearLayout>
                         <LinearLayout
@@ -255,8 +255,8 @@
                                 android:id="@+id/messageboard_pen1"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:layout_width="15dp"
-                                android:layout_height="15dp"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
                                 android:background="@drawable/pen_sele"
                                 android:orientation="horizontal">
                                 <View
@@ -268,11 +268,27 @@
                             </LinearLayout>
                             <LinearLayout
                                 android:id="@+id/messageboard_pen2"
-                                android:layout_marginLeft="10dp"
+                                android:layout_marginLeft="7dp"
                                 android:clickable="true"
                                 android:gravity="center"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:background="@drawable/pen_sele"
+                                android:orientation="horizontal">
+                                <View
+                                    android:clickable="false"
+                                    android:focusableInTouchMode="true"
+                                    android:layout_width="7dp"
+                                    android:layout_height="7dp"
+                                    android:background="@drawable/pen"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/messageboard_pen3"
+                                android:layout_marginLeft="7dp"
+                                android:clickable="true"
+                                android:gravity="center"
+                                android:layout_width="17dp"
+                                android:layout_height="17dp"
                                 android:background="@drawable/pen_sele"
                                 android:orientation="horizontal">
                                 <View
@@ -280,22 +296,6 @@
                                     android:focusableInTouchMode="true"
                                     android:layout_width="10dp"
                                     android:layout_height="10dp"
-                                    android:background="@drawable/pen"/>
-                            </LinearLayout>
-                            <LinearLayout
-                                android:id="@+id/messageboard_pen3"
-                                android:layout_marginLeft="10dp"
-                                android:clickable="true"
-                                android:gravity="center"
-                                android:layout_width="25dp"
-                                android:layout_height="25dp"
-                                android:background="@drawable/pen_sele"
-                                android:orientation="horizontal">
-                                <View
-                                    android:clickable="false"
-                                    android:focusableInTouchMode="true"
-                                    android:layout_width="15dp"
-                                    android:layout_height="15dp"
                                     android:background="@drawable/pen"/>
                             </LinearLayout>
                         </LinearLayout>
@@ -309,6 +309,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content">
                             <ImageButton
+                                android:gravity="center"
                                 android:id="@+id/messageboard_earser"
                                 android:layout_width="20dp"
                                 android:layout_height="20dp"
@@ -334,8 +335,8 @@
             android:orientation="horizontal">
             <com.jt28.a6735.mirro.view.CustomProgressbar
                 android:id="@+id/messagedboard_voicestart"
-                android:layout_width="70dp"
-                android:layout_height="70dp" />
+                android:layout_width="49dp"
+                android:layout_height="49dp" />
         </LinearLayout>
     </LinearLayout>
 

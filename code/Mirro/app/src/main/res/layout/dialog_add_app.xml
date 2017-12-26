@@ -10,10 +10,10 @@
         android:layout_height="wrap_content"
         android:background="?android:attr/selectableItemBackground"
         android:gravity="center"
-        android:padding="10dp"
+        android:padding="7dp"
         android:text="确定"
         android:textColor="@color/blue"
-        android:textSize="14sp"/>
+        android:textSize="10sp"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/dialog_add_app_list"

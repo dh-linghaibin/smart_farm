@@ -45,19 +45,19 @@ public class BezierCurve extends View {
     // 贝塞尔曲线最大阶数
     private static final int MAX_COUNT = 9;
     // 合法区域宽度
-    private static final int REGION_WIDTH = 10;
+    private static final int REGION_WIDTH = 7;
     // 矩形尺寸
-    private static final int FINGER_RECT_SIZE = 60;
+    private static final int FINGER_RECT_SIZE = 42;
     // 贝塞尔曲线线宽
     private static final int BEZIER_WIDTH = 3;
     // 切线线宽
     private static final int TANGENT_WIDTH = 2;
     // 控制点连线线宽
-    private static final int CONTROL_WIDTH = 6;
+    private static final int CONTROL_WIDTH = 4;
     // 控制点半径
-    private static final int CONTROL_RADIUS = 6;
+    private static final int CONTROL_RADIUS = 4;
     // 文字画笔尺寸
-    private static final int TEXT_SIZE = 20;
+    private static final int TEXT_SIZE = 14;
     // 文本高度
     private static final int TEXT_HEIGHT = 60;
     // 移动速率
@@ -71,9 +71,9 @@ public class BezierCurve extends View {
     //抬头标示
     private static String[] TAI_TOU = {"星期一","星期二","星期三","星期四","星期五","星期六","星期天"};
     private static String[] TAI_TOU_tq = {"晴","阴","多云","大雪","中雪","小雨","阵雪"};
-    private static int[] weizhi = {69,208,347,486,625,764,903};
-    private static int[] TAI_TOU_temp_l = {10,10,10,10,10,10,10};
-    private static int[] TAI_TOU_temp_d = {10,10,10,10,10,10,10};
+    private static int[] weizhi = {48,145,242,340,437,534,632};
+    private static int[] TAI_TOU_temp_l = {7,7,7,7,7,7,7};
+    private static int[] TAI_TOU_temp_d = {7,7,7,7,7,7,7};
     private boolean arrave = false;
     private float arrave_val_1 = 0;
     private float arrave_val_2 = 0;
@@ -132,7 +132,7 @@ public class BezierCurve extends View {
     // 设置是否循环
     private boolean mLoop = false;
     // 设置是否显示切线
-    private float iconWidth = 45;  //天气图标的边长
+    private float iconWidth = 31;  //天气图标的边长
 
     public void SetTAl(String[] TAI_TOU){
         this.TAI_TOU = TAI_TOU;
@@ -149,26 +149,26 @@ public class BezierCurve extends View {
 
         mControlPoints_l.clear();
 
-        mControlPoints_l.add(new PointF(29,  200+((TAI_TOU_temp_l[0]-temp_lp)*10) ));
-        mControlPoints_l.add(new PointF(69,  200+((TAI_TOU_temp_l[0]-temp_lp)*10) ));
-        mControlPoints_l.add(new PointF(208, 200+((TAI_TOU_temp_l[1]-temp_lp)*10)));
-        mControlPoints_l.add(new PointF(347, 200+((TAI_TOU_temp_l[2]-temp_lp)*10)));
-        mControlPoints_l.add(new PointF(486, 200+((TAI_TOU_temp_l[3]-temp_lp)*10)));
-        mControlPoints_l.add(new PointF(625, 200+((TAI_TOU_temp_l[4]-temp_lp)*10)));
-        mControlPoints_l.add(new PointF(764, 200+((TAI_TOU_temp_l[5]-temp_lp)*10)));
-        mControlPoints_l.add(new PointF(903, 200+((TAI_TOU_temp_l[6]-temp_lp)*10)));
-        mControlPoints_l.add(new PointF(930, 200+((TAI_TOU_temp_l[6]-temp_lp)*10) ));
+        mControlPoints_l.add(new PointF(20,  140+((TAI_TOU_temp_l[0]-temp_lp)*7) ));
+        mControlPoints_l.add(new PointF(48,  140+((TAI_TOU_temp_l[0]-temp_lp)*7) ));
+        mControlPoints_l.add(new PointF(145, 140+((TAI_TOU_temp_l[1]-temp_lp)*7)));
+        mControlPoints_l.add(new PointF(243, 140+((TAI_TOU_temp_l[2]-temp_lp)*7)));
+        mControlPoints_l.add(new PointF(340, 140+((TAI_TOU_temp_l[3]-temp_lp)*7)));
+        mControlPoints_l.add(new PointF(437, 140+((TAI_TOU_temp_l[4]-temp_lp)*7)));
+        mControlPoints_l.add(new PointF(534, 140+((TAI_TOU_temp_l[5]-temp_lp)*7)));
+        mControlPoints_l.add(new PointF(632, 140+((TAI_TOU_temp_l[6]-temp_lp)*7)));
+        mControlPoints_l.add(new PointF(651, 140+((TAI_TOU_temp_l[6]-temp_lp)*7) ));
 
         mControlPoints_d.clear();
-        mControlPoints_d.add(new PointF(29,  270+((TAI_TOU_temp_d[0]-temp_hp)*10) ));
-        mControlPoints_d.add(new PointF(69,  270+((TAI_TOU_temp_d[0]-temp_hp)*10)));
-        mControlPoints_d.add(new PointF(208, 270+((TAI_TOU_temp_d[1]-temp_hp)*10)));
-        mControlPoints_d.add(new PointF(347, 270+((TAI_TOU_temp_d[2]-temp_hp)*10)));
-        mControlPoints_d.add(new PointF(486, 270+((TAI_TOU_temp_d[3]-temp_hp)*10)));
-        mControlPoints_d.add(new PointF(625, 270+((TAI_TOU_temp_d[4]-temp_hp)*10)));
-        mControlPoints_d.add(new PointF(764, 270+((TAI_TOU_temp_d[5]-temp_hp)*10)));
-        mControlPoints_d.add(new PointF(903, 270+((TAI_TOU_temp_d[6]-temp_hp)*10)));
-        mControlPoints_d.add(new PointF(930, 270+((TAI_TOU_temp_d[6]-temp_hp)*10) ));
+        mControlPoints_d.add(new PointF(20,  189+((TAI_TOU_temp_d[0]-temp_hp)*7) ));
+        mControlPoints_d.add(new PointF(48,  189+((TAI_TOU_temp_d[0]-temp_hp)*7)));
+        mControlPoints_d.add(new PointF(145, 189+((TAI_TOU_temp_d[1]-temp_hp)*7)));
+        mControlPoints_d.add(new PointF(243, 189+((TAI_TOU_temp_d[2]-temp_hp)*7)));
+        mControlPoints_d.add(new PointF(340, 189+((TAI_TOU_temp_d[3]-temp_hp)*7)));
+        mControlPoints_d.add(new PointF(437, 189+((TAI_TOU_temp_d[4]-temp_hp)*7)));
+        mControlPoints_d.add(new PointF(534, 189+((TAI_TOU_temp_d[5]-temp_hp)*7)));
+        mControlPoints_d.add(new PointF(632, 189+((TAI_TOU_temp_d[6]-temp_hp)*7)));
+        mControlPoints_d.add(new PointF(651, 189+((TAI_TOU_temp_d[6]-temp_hp)*7) ));
     }
 
     private int getIconResId(String weather) {
@@ -453,7 +453,7 @@ public class BezierCurve extends View {
     private Paint linePaint; //低线画笔
     private static final int LINE_WIDTH = 2;
     private static int DEFAULT_GRAY = Color.GRAY;//底线颜色
-    private int defaultPadding = 10; //折线坐标图四周留出来的偏移量
+    private int defaultPadding = 7; //折线坐标图四周留出来的偏移量
     /**
      * 底线
      * @param canvas
@@ -493,8 +493,8 @@ public class BezierCurve extends View {
         linePaint.setStrokeWidth(1);//设置线宽
 
         for(int i =0;i < 7;i++) {
-            canvas.drawLine(sWidth+(sWidth/2) + i*jWidth, sHeight+10,
-                    sWidth+(sWidth/2) + i*jWidth, sHeight+40,
+            canvas.drawLine(sWidth+(sWidth/2) + i*jWidth, sHeight+7,
+                    sWidth+(sWidth/2) + i*jWidth, sHeight+28,
                     linePaint);
             Log.d("xhh", String.valueOf(sWidth+(sWidth/2) + i*jWidth));
         }
@@ -538,8 +538,8 @@ public class BezierCurve extends View {
         for(int i =0;i < 7;i++) {
             canvas.drawText(TAI_TOU[i],sWidth+i*jWidth, jHeight, mTextPointPaint);
             if(TAI_TOU_C == i) {
-                RectF iconRect = new RectF(sWidth+i*jWidth-jWidth/4, jHeight-40, 126 + sWidth + i*jWidth-jWidth/4, 116 + jHeight-40);
-                Bitmap icon = getWeatherIcon2(R.mipmap.bg_week,126,116);
+                RectF iconRect = new RectF(sWidth+i*jWidth-jWidth/4, jHeight-28, 88 + sWidth + i*jWidth-jWidth/4, 81 + jHeight-28);
+                Bitmap icon = getWeatherIcon2(R.mipmap.bg_week,88,81);
                 canvas.drawBitmap(icon, null, iconRect, null);//画图标
             }
         }
@@ -644,10 +644,10 @@ public class BezierCurve extends View {
             }
             if(arrave_val_1 != 0) {
                 canvas.drawCircle(weizhi[TAI_TOU_C], arrave_val_1, 5, mTextPaint);// 小圆
-                canvas.drawText(TAI_TOU_temp_l[TAI_TOU_C] + "°", weizhi[TAI_TOU_C]+10, arrave_val_1-20, mTextPaint);
+                canvas.drawText(TAI_TOU_temp_l[TAI_TOU_C] + "°", weizhi[TAI_TOU_C]+7, arrave_val_1-14, mTextPaint);
 
                 canvas.drawCircle(weizhi[TAI_TOU_C], arrave_val_2, 5, mTextPaint2);// 小圆
-                canvas.drawText(TAI_TOU_temp_d[TAI_TOU_C] + "°", weizhi[TAI_TOU_C]+10, arrave_val_2-20, mTextPaint2);
+                canvas.drawText(TAI_TOU_temp_d[TAI_TOU_C] + "°", weizhi[TAI_TOU_C]+7, arrave_val_2-14, mTextPaint2);
             }
             mHandler.removeMessages(HANDLER_WHAT);
             mHandler.sendEmptyMessage(HANDLER_WHAT);
@@ -661,17 +661,17 @@ public class BezierCurve extends View {
 //        this.currentY = event.getY(); //触摸座标Y
 
 
-        if(event.getX() > weizhi[6]-100) {
+        if(event.getX() > weizhi[6]-70) {
             TAI_TOU_C = 6;
-        } else if(event.getX() > weizhi[5]-100) {
+        } else if(event.getX() > weizhi[5]-70) {
             TAI_TOU_C = 5;
-        } else if(event.getX() > weizhi[4]-100) {
+        } else if(event.getX() > weizhi[4]-70) {
             TAI_TOU_C = 4;
-        } else if(event.getX() > weizhi[3]-100) {
+        } else if(event.getX() > weizhi[3]-70) {
             TAI_TOU_C = 3;
-        } else if(event.getX() > weizhi[2]-100) {
+        } else if(event.getX() > weizhi[2]-70) {
             TAI_TOU_C = 2;
-        } else if(event.getX() > weizhi[1]-100) {
+        } else if(event.getX() > weizhi[1]-70) {
             TAI_TOU_C = 1;
         } else {
             TAI_TOU_C = 0;

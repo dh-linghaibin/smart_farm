@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_marginBottom="20dp"
+    android:layout_marginBottom="14dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal">
 
     <LinearLayout
         android:id="@+id/item_bigmessage_typegroup"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
         android:gravity="center">
         <ImageView
             android:id="@+id/item_bigmessage_type"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
             android:background="@mipmap/icon_image" />
     </LinearLayout>
 
@@ -30,21 +30,21 @@
             android:gravity="center">
             <ImageView
                 android:id="@+id/item_bigmessage_back"
-                android:layout_width="291px"
-                android:layout_height="200px" />
+                android:layout_width="204px"
+                android:layout_height="140px" />
             <RelativeLayout
                 android:visibility="gone"
                 android:id="@+id/item_bigmessage_voicetimegroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <RelativeLayout
-                    android:layout_marginTop="10dp"
-                    android:layout_width="289px"
-                    android:layout_height="56px"
+                    android:layout_marginTop="7dp"
+                    android:layout_width="203px"
+                    android:layout_height="39px"
                     android:background="@drawable/item_message_shape_corner">
                     <TextView
                         android:id="@+id/item_bigmessage_voicetime"
-                        android:layout_marginRight="10dp"
+                        android:layout_marginRight="7dp"
                         android:layout_alignParentRight = "true"
                         android:layout_centerVertical = "true"
                         android:layout_width="wrap_content"
@@ -57,7 +57,7 @@
 
         <TextView
             android:id="@+id/item_bigmessage_nowtime"
-            android:layout_marginLeft="20px"
+            android:layout_marginLeft="14px"
             android:layout_toRightOf = "@+id/item_bigmessage_group"
             android:layout_alignBottom="@+id/item_bigmessage_group"
             android:layout_width="wrap_content"

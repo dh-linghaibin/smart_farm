@@ -3,8 +3,7 @@
     android:layout_width="375px"
     android:layout_height="700px"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:background="@color/red">
+    android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="140px"
@@ -340,7 +339,8 @@
                 android:layout_marginLeft="10dp"
                 android:text="第三方应用"
                 android:textColor="#6b6b6b"
-                android:textSize="12px" />
+                android:textSize="12px"
+                android:gravity="center"/>
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/mainmenu_applist"

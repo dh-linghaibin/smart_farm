@@ -180,20 +180,20 @@ public class MainActivity extends AppCompatActivity implements BDLocationListene
                             String[] xys = xy.split("#");
                             if (xys.length == 2) {
                                 if(Integer.parseInt(xys[0]) < 500) {
-                                    SharedPreferencesUtil.saveData(getApplication(), "one", 970 + "#" + 15);
-                                    SharedPreferencesUtil.saveData(getApplication(), "tow", 30 + "#" + 15);
+                                    SharedPreferencesUtil.saveData(getApplication(), "one", 940 + "#" + 15);
+                                    SharedPreferencesUtil.saveData(getApplication(), "tow", 60 + "#" + 15);
                                 } else {
-                                    SharedPreferencesUtil.saveData(getApplication(), "one", 30 + "#" + 15);
-                                    SharedPreferencesUtil.saveData(getApplication(), "tow", 500 + "#" + 15);
+                                    SharedPreferencesUtil.saveData(getApplication(), "one", 60 + "#" + 15);
+                                    SharedPreferencesUtil.saveData(getApplication(), "tow", 570 + "#" + 15);
                                 }
                             } else {
-                                SharedPreferencesUtil.saveData(getApplication(), "one", 30 + "#" + 15);
-                                SharedPreferencesUtil.saveData(getApplication(), "tow", 500 + "#" + 15);
+                                SharedPreferencesUtil.saveData(getApplication(), "one", 60 + "#" + 15);
+                                SharedPreferencesUtil.saveData(getApplication(), "tow", 570 + "#" + 15);
                             }
                             Log.d("lhb", Arrays.toString(xys));
                         } else {
-                            SharedPreferencesUtil.saveData(getApplication(), "one", 970 + "#" + 15);
-                            SharedPreferencesUtil.saveData(getApplication(), "tow", 30 + "#" + 15);
+                            SharedPreferencesUtil.saveData(getApplication(), "one", 940 + "#" + 15);
+                            SharedPreferencesUtil.saveData(getApplication(), "tow", 60 + "#" + 15);
                         }
 
                         main_menu.setVisibility(View.VISIBLE);

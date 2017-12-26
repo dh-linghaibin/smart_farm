@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="739px"
-    android:layout_height="700px"
-    android:background="@color/red">
+    android:layout_width="700px"
+    android:layout_height="689px">
     <LinearLayout
-        android:layout_width="739px"
-        android:layout_height="700px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical">
         <LinearLayout
             android:layout_weight="1.6"
@@ -123,7 +122,7 @@
 
         <LinearLayout
             android:layout_weight="1"
-            android:layout_width="739px"
+            android:layout_width="680px"
             android:layout_height="0dp"
             android:orientation="vertical">
             <LinearLayout
@@ -471,40 +470,44 @@
             </LinearLayout>
 
             <LinearLayout
-                android:gravity="center"
-                android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
                 android:orientation="horizontal">
+
                 <LinearLayout
-                    android:gravity="center"
-                    android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
                     android:orientation="vertical">
+
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@mipmap/icon_wet"/>
+                        android:background="@mipmap/icon_wet" />
                 </LinearLayout>
+
                 <LinearLayout
-                    android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:orientation="vertical">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="干燥"
                         android:textColor="#313131"
-                        android:textSize="17px"
-                        />
+                        android:textSize="17px" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="湿度"
-                        android:textSize="11px"
-                        android:textColor="#6b6b6b"/>
+                        android:textColor="#6b6b6b"
+                        android:textSize="11px" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

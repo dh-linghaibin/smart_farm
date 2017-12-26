@@ -5,11 +5,11 @@
     android:background="#e0676767">
 
     <Button
-        android:layout_marginTop="49px"
-        android:layout_marginLeft="49px"
+        android:layout_marginTop="34px"
+        android:layout_marginLeft="34px"
         android:id="@+id/dialog_record_bmp_close"
-        android:layout_width="64px"
-        android:layout_height="64px"
+        android:layout_width="45px"
+        android:layout_height="45px"
         android:background="@mipmap/icon_close_default"
         />
 

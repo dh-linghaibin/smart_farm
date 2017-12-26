@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="907px"
+    android:layout_width="635px"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:gravity="center_vertical">
     <LinearLayout
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="28dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -15,14 +15,14 @@
             <!--android:layout_width="210px"-->
             <!--android:layout_height="157px" />-->
         <RelativeLayout
-            android:layout_marginLeft="34px"
+            android:layout_marginLeft="24px"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/item_bignewsadpter_content"
                 android:layout_width="500dp"
-                android:layout_height="150dp"
-                android:textSize="20px"
+                android:layout_height="200dp"
+                android:textSize="14px"
                 android:textColor="#707070"
                 android:text="asdd"
                 android:maxLines = "200"
@@ -31,15 +31,16 @@
                 android:id="@+id/item_bignewsadpter_but"
                 android:layout_alignParentBottom = "true"
                 android:layout_alignParentRight = "true"
-                android:layout_marginBottom="23px"
-                android:layout_marginRight="23px"
-                android:layout_width="44px"
-                android:layout_height="44px" />
+                android:layout_marginBottom="16px"
+                android:layout_marginRight="16px"
+                android:layout_width="31px"
+                android:layout_height="31px" />
         </RelativeLayout>
 
     </LinearLayout>
 
     <com.jt28.a6735.mirro.view.HorizontalNumProgressBar
+        android:layout_marginTop="10dp"
         android:id="@+id/item_bignewsadpter_voiceprogress"
         android:layout_width="match_parent"
         android:layout_height="4px" />

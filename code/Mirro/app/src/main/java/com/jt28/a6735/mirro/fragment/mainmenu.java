@@ -79,15 +79,14 @@ import static com.jt28.a6735.mirro.MainActivity.weatherID;
 public class mainmenu extends Fragment {
     private String TAG = "lhb";
     private boolean chose_dr = false;
-    private ImageView sys_view;
+    private static ImageView sys_view;
 
     void but_set() {
+        sys_view = getActivity().findViewById(R.id.mainmenu_setleftopen);
         if(chose_dr) {
             weatheropen = getActivity().findViewById(R.id.mainmenu_werleftopen);
         } else {
             weatheropen = getActivity().findViewById(R.id.mainmenu_werleftopen2);
-
-            sys_view = getActivity().findViewById(R.id.mainmenu_setleftopen);
             sys_view.setVisibility(View.VISIBLE);
         }
         weatheropen.setVisibility(View.VISIBLE);
@@ -389,7 +388,7 @@ public class mainmenu extends Fragment {
                         messageboardopen.setVisibility(View.GONE);
                         newleftopen.setVisibility(View.GONE);
                         app_add.setVisibility(View.GONE);
-                      //  sys_view.setVisibility(View.GONE);
+                        sys_view.setVisibility(View.GONE);
                         chose_dr = !chose_dr;
                         but_set();
                     }
@@ -597,12 +596,12 @@ public class mainmenu extends Fragment {
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     private void AddApp() {
-        final Dialog bottomDialog = new Dialog(getContext(), R.style.BottomDialog);
-        final View contentView = LayoutInflater.from(getContext()).inflate(R.layout.dialog_add_app, null);
+        final Dialog bottomDialog = new Dialog(getActivity(), R.style.BottomDialog);
+        final View contentView = LayoutInflater.from(getActivity()).inflate(R.layout.dialog_add_app, null);
         bottomDialog.setContentView(contentView);
         ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) contentView.getLayoutParams();
-        params.width = getResources().getDisplayMetrics().widthPixels - DensityUtil.dp2px(getContext(), 16f);
-        params.bottomMargin = DensityUtil.dp2px(getContext(), 8f);
+        params.width = getResources().getDisplayMetrics().widthPixels - DensityUtil.dp2px(getActivity(), 16f);
+        params.bottomMargin = DensityUtil.dp2px(getActivity(), 8f);
         contentView.setLayoutParams(params);
         bottomDialog.setCanceledOnTouchOutside(true);
         bottomDialog.getWindow().setGravity(Gravity.BOTTOM);
@@ -610,7 +609,7 @@ public class mainmenu extends Fragment {
         //绑定内部控件
         final RecyclerView recyclerView = (RecyclerView) contentView.findViewById(R.id.dialog_add_app_list);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setLayoutManager(new GridLayoutManager(getContext(),1));
+        recyclerView.setLayoutManager(new GridLayoutManager(getActivity(),1));
         final List<MyAppInfoch> app_list = new ArrayList<>();
         new Thread(){
             @Override
@@ -624,7 +623,7 @@ public class mainmenu extends Fragment {
                         for(MyAppInfo tem: get_app) {
                             app_list.add(new MyAppInfoch(tem.getImage(),tem.getAppName(),tem.getPackname(),false));
                         }
-                        MyAadapter myAadapter = new MyAadapter(getContext(),app_list);
+                        MyAadapter myAadapter = new MyAadapter(getActivity(),app_list);
                         recyclerView.setAdapter(myAadapter);
                     }
                 });
@@ -656,27 +655,6 @@ public class mainmenu extends Fragment {
                     s_appInfos.add(new app_save(tep.getPackname()) );
                 }
                 EventBus.getDefault().post(new Butcmd("updatasave"));
-//                new Thread(){
-//                    @Override
-//                    public void run() {
-//                        super.run();
-//                        //扫描得到APP列表
-//                        mHandler.post(new Runnable() {
-//                            @Override
-//                            public void run() {
-//                                app_appadapter = new AppAdapter(getActivity(),appInfos);
-//                                l_app_list.setAdapter(app_appadapter);
-//                                //设置监听
-//                                app_appadapter.setAction(new AppAdapter.Chickaction() {
-//                                    @Override
-//                                    public void onData(String url) {
-//                                        AppUtil.startAPP(getActivity(),url);
-//                                    }
-//                                });
-//                            }
-//                        });
-//                    }
-//                }.start();
                 bottomDialog.dismiss();
             }
         });

@@ -28,6 +28,8 @@ import java.util.Arrays;
  * Created by a6735 on 2017/9/20.
  */
 public class bigshowmanger extends Fragment implements View.OnClickListener {
+    private static int page = 0;
+
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
@@ -46,11 +48,21 @@ public class bigshowmanger extends Fragment implements View.OnClickListener {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.bigshowmanger_leftbtn:{
-                EventBus.getDefault().post(new Butcmd("close"));
+                if(page == 4) {
+                    viewPager.setCurrentItem(2);
+                    page = 2;
+                } else {
+                    EventBus.getDefault().post(new Butcmd("close"));
+                }
             }
             break;
             case R.id.bigshowmanger_leftbtn2:{
-                EventBus.getDefault().post(new Butcmd("close"));
+                if(page == 4) {
+                    viewPager.setCurrentItem(2);
+                    page = 2;
+                } else {
+                    EventBus.getDefault().post(new Butcmd("close"));
+                }
             }
             break;
             default:
@@ -97,35 +109,42 @@ public class bigshowmanger extends Fragment implements View.OnClickListener {
         switch (event.getCmd()) {
             case "choosecity":{
                 viewPager.setCurrentItem(0);
+                page = 0;
             }
                 break;
             case "weatheropen":{
                 viewPager.setCurrentItem(2);
+                page = 2;
             }
                 break;
             case "messageboardopen":{
                 viewPager.setCurrentItem(3);
+                page = 3;
             }
                 break;
             case "newsclose":{
                 viewPager.setCurrentItem(1);
+                page = 1;
             }
                 break;
             case "dy":{
                 viewPager.setCurrentItem(4);
-
+                page = 4;
             }
                 break;
             case "ym":{
                 viewPager.setCurrentItem(4);
+                page = 4;
             }
                 break;
             case "lw":{
                 viewPager.setCurrentItem(4);
+                page = 4;
             }
                 break;
             case "mz":{
                 viewPager.setCurrentItem(4);
+                page = 4;
             }
                 break;
         }

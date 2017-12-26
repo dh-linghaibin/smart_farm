@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="1001px"
-    android:layout_height="984px"
+    android:layout_width="700px"
+    android:layout_height="689px"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <LinearLayout
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="117px"
+            android:layout_height="82px"
             android:orientation="vertical">
             <TextView
-                android:layout_marginTop="34px"
+                android:layout_marginTop="24px"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="城市切换"
                 android:textColor="#303030"
-                android:textSize="32px"/>
+                android:textSize="23px"/>
             <View
-                android:layout_marginTop="36px"
+                android:layout_marginTop="25px"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:background="@color/gainsboro"/>
